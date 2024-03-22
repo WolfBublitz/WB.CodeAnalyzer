@@ -1,0 +1,14 @@
+<RuleSet Name="static code analysis rules" Description="These rules are used by the c# projects." ToolsVersion="10.0">
+  <Localization ResourceAssembly="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.dll" ResourceBaseName="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.Localized">
+    <Name Resource="C# static code analysis" />
+    <Description Resource="Static code analysis rules" />
+  </Localization>
+
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+  </Rules>
+
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+    <!-- SA1101PrefixLocalCallsWithThis -->
+    <Rule Id="SA1101" Action="None" />
+  </Rules>
+</RuleSet>

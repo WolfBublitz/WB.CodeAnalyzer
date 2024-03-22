@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
+    <Authors>Wolf Bublitz</Authors>
+    <Product>WB.CodeAnalyzer</Product>
+    <RepositoryUrl>https://github.com/WolfBublitz/L0gg3r.CodeAnalyzer</RepositoryUrl>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <!-- Additional Code Analyzer files -->
+  <ItemGroup>
+    <None Include="analysis.ruleset">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </None>
+    <None Include="stylecop.json">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </None>
+    <None Include="WB.CodeAnalyzer.props">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+		<PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556" />
+  </ItemGroup>
+
+</Project>
