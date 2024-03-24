@@ -4,8 +4,15 @@
     <Authors>Wolf Bublitz</Authors>
     <Product>WB.CodeAnalyzer</Product>
     <RepositoryUrl>https://github.com/WolfBublitz/L0gg3r.CodeAnalyzer</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <Version>1.0.0</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="\"/>
+    <None Include="../LICENSE.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
   <!-- Additional Code Analyzer files -->
   <ItemGroup>
