@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <NoWarn>NU5104</NoWarn> <!-- Do not warn about missing license file -->
+    <NoWarn>NU5104</NoWarn> <!-- A stable release of a package should not have a prerelease dependency. -->
   </PropertyGroup>
 
   <ItemGroup>
